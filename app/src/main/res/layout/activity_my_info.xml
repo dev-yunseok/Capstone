@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--activity_main.xml-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp"
+    android:orientation="vertical"
+    tools:context=".MyInfo">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btn_profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_image"
+        app:civ_border_color="#6E2B2B"
+        app:civ_border_overlay="true"
+        app:civ_border_width="10dp"
+        android:onClick="onClick"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_marginBottom="20sp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30sp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:src="@drawable/rank"></ImageView>
+
+        <EditText
+            android:id="@+id/btn_profile_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_marginLeft="5sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="최윤석짱"
+            android:textSize="35dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="15sp"
+            android:paddingBottom="20sp"
+            android:layout_marginLeft="5sp"
+            android:text="기부자님"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" · 회원정보"
+        android:textSize="40sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/black"
+        android:onClick="onClick"
+        android:layout_marginBottom="15sp"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" · 내가 쓴 글 목록"
+        android:textSize="40sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/black"
+        android:onClick="onClick"
+        android:layout_marginBottom="15sp"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" · 임시 저장 목록"
+        android:textSize="40sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/black"
+        android:onClick="onClick"
+        android:layout_marginBottom="25sp"></TextView>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="로그아웃"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#E8A67F"
+        android:onClick="onClick">
+    </Button>
+</LinearLayout>
